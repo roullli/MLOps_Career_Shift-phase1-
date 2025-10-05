@@ -1,5 +1,6 @@
 from random import randint, seed
 
+
 def main() -> None:
     seed(23)
 
@@ -32,7 +33,9 @@ def main() -> None:
 
     set_a_b_union = set_a | set_b  # OR set_a.union(set_b)
     set_a_b_intersect = set_a & set_b  # OR set_a.intersection(set_b)
-    set_a_b_diff = set_a - set_b  # OR set_b.difference(set_a) !!!Here the order matters!!!
+    set_a_b_diff = (
+        set_a - set_b
+    )  # OR set_b.difference(set_a) !!!Here the order matters!!!
     set_a_b_symdiff = set_a ^ set_b  # OR set_a.symmetric_difference(set_b)
 
     print(set_a_b_union)
@@ -40,5 +43,6 @@ def main() -> None:
     print(set_a_b_diff)
     print(set_a_b_symdiff)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
