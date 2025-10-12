@@ -39,10 +39,6 @@ def main() -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
 
     # Write list names to names.txt
-    with open("./files/names.txt", "w") as file:
-        for name in names_list:
-            file.write(f"{name}\n")
-
     try:
         with path.open("w", encoding="utf-8") as file:
             for name in names_list:

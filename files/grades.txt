@@ -1,0 +1,3 @@
+Ali: 78
+Reza: 80
+Roullli: 90
